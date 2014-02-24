@@ -1,14 +1,78 @@
-@font-face {
-font-family: MyriadPro;
-src: url("fonts/MyriadPro-Regular.otf") format("opentype");
+
+html, body {
+  	font-family: 'Open Sans', sans-serif;
+  	margin: 0px;
+	padding: 0px;
+  	height: 100%;
+ 	font-size: 8.5pt;
+  	color: #444142;
 }
 
-@font-face {
-font-family: MyriadPro;
-font-weight: bold;
-src: url("fonts/MyriadPro-Bold.otf") format("opentype");
+#page_container {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
 }
 
-p {
-	font-family: MyriadPro;
+#header {
+	background: #ffffff;
+	display: block;
+	margin-top: auto ;
+  	margin-bottom: auto ;
+	margin-left: auto ;
+  	margin-right: auto ;
+	height: 100px; 
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	opacity: 100%;
+}
+
+/*Steven Dao*/
+#header h1 {
+	/*position: relative;*/
+	margin-bottom: -32px;
+	font-size: 27pt;
+	font-weight: bold;
+	color: #006987;
+}
+
+/*Computer Science Specialist Major*/
+#header h5 {
+	/*position: relative;*/
+	font-size: 10.25pt;
+	font-weight: 300;
+	font-style: italic;
+	color: #006987;
+}
+
+#content {
+	position: absolute;
+	top: 110px;
+	bottom: 0px;
+	left: 295px;
+	right: 0px;
+	max-width: 450px;
+	min-width: 250px;
+	margin-right: 50px;
+} 
+
+#content h1 {
+	font-size: 10.5pt;
+	font-weight: bold;
+	color: #006987;
+}
+
+#content h2 {
+	margin-bottom: -12px;
+	font-size: 8.5pt;
+	font-weight: bold;
+}
+
+#content h3 {
+	margin-bottom: -12px;
+	font-size: 8.5pt;
+	font-weight: normal;
+	color: #006987;
 }
