@@ -1,11 +1,12 @@
 /* TEST */
-h1, h2, h3, h4 {
+h2, h3, h4 {
 	margin-bottom: 0.25em;
 	color: #006987
 }
 
 h1 {
 	font-weight: 800;
+	margin-bottom: 0;
 }
 
 h2 {
@@ -45,7 +46,7 @@ h6 {
 	color: rgba(0, 0, 0, 0.65);
 	position: absolute;
 	right: 0.05em;
-	top: 1em;
+	top: 1.06em;
 }
 
 .skills {

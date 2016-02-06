@@ -5,10 +5,16 @@
 		<h2 class="footer-heading">Contact</h2>
 
 		<div class="footer-col-wrapper">
-			<div class="footer-col  footer-col-1">
+			<div class="col-md-6">
 				<ul class="contact-list">
-					<li>{{ site.title }}</li>
-					<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+					<li>
+						{{ site.title }}
+					</li>
+					<li>
+						<a href="mailto:{{ site.email }}">
+							{{ site.email }}
+						</a>
+					</li>
 					{% if site.github_username %}
 					<li>
 						<a href="https://github.com/{{ site.github_username }}">
@@ -19,16 +25,12 @@
                 </svg>
               </span>
 
-							<span class="username">{{ site.github_username }}</span>
+							<span class="username">
+								{{ site.github_username }}
+							</span>
 						</a>
 					</li>
 					{% endif %}
-				</ul>
-			</div>
-
-			<div class="footer-col  footer-col-2">
-				<ul class="social-media-list">
-
 					{% if site.twitter_username %}
 					<li>
 						<a href="https://twitter.com/{{ site.twitter_username }}">
@@ -39,20 +41,21 @@
                 </svg>
               </span>
 
-							<span class="username">{{ site.twitter_username }}</span>
+							<span class="username">
+								{{ site.twitter_username }}
+							</span>
 						</a>
 					</li>
 					{% endif %}
 				</ul>
 			</div>
-
-			<div class="footer-col  footer-col-3">
-				<p class="text">{{ site.description }}</p>
+			<div class="col-md-6">
+				<p class="text">
+					{{ site.description }}
+				</p>
 			</div>
 		</div>
-
 	</div>
-
 
 	<!-- Bootstrap -->
 	<script src="../js/bootstrap.min.js"></script>
