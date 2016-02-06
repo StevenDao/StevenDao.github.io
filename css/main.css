@@ -240,6 +240,7 @@ pre > code {
 	.site-nav .menu-icon > svg {
 		width: 18px;
 		height: 15px;
+		margin-top: -0.25em;
 	}
 
 	.site-nav .menu-icon > svg path {
