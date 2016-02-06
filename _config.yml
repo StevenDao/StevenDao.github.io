@@ -1,0 +1,16 @@
+# Site settings
+title: Steven Dao
+author: Steven Dao
+email: Steven.Dao@mail.utoronto.ca
+description: >
+  This is still a work in progress! <br>
+  Making a change, one step at a time!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://stevendao.github.io" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+github_username:  StevenDao
+#paginate: 5
+#paginate_path: "/page/:num/"
+permalink: "/:title"
+# Build settings
+markdown: kramdown
