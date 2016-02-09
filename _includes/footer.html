@@ -5,7 +5,7 @@
 		<h2 class="footer-heading">Contact</h2>
 
 		<div class="footer-col-wrapper">
-			<div class="col-md-6">
+			<div class="footer-col  footer-col-1">
 				<ul class="contact-list">
 					<li>
 						{{ site.title }}
@@ -31,6 +31,11 @@
 						</a>
 					</li>
 					{% endif %}
+				</ul>
+			</div>
+
+			<div class="footer-col  footer-col-2">
+				<ul class="social-media-list">
 					{% if site.twitter_username %}
 					<li>
 						<a href="https://twitter.com/{{ site.twitter_username }}">
@@ -49,13 +54,15 @@
 					{% endif %}
 				</ul>
 			</div>
-			<div class="col-md-6">
+
+			<div class="footer-col  footer-col-3">
 				<p class="text">
 					{{ site.description }}
 				</p>
 			</div>
 		</div>
 	</div>
+
 
 	<!-- Bootstrap -->
 	<script src="../js/bootstrap.min.js"></script>

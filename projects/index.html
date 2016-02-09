@@ -1,34 +1,65 @@
 ---
 layout: default
 ---
+<div class="container-fluid">
+	<div class="row">
+		<h1 class="col-sm-offset-3 col-sm-7 col-md-offset-3 col-md-7">Projects</h1>
+	</div>
 
-<div class="home">
+	<!-- This loops through the paginated posts -->
+	{% if site.posts.size > 0 %}
+	{% for post in paginator.posts %}
+	<div class="row">
+		<!-- Left Side -->
+		<div class="col-md-3">
+			<div class="date">{{ post.date | date: "%b %-d, %Y" }}</div>
+		</div>
 
-	<h1 class="page-heading">Projects</h1>
-
-	<ul class="post-list">
-		{% for post in site.posts %}
-		<li>
-			<span class="post-meta">
-				{{ post.date | date: "%b %-d, %Y" }}
-			</span>
-
-			<h2>
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-					{{ post.title }}
+		<div class="col-md-7">
+			<h2 class="post-link">
+				<a href="{{ post.url | prepend: site.baseurl }}">
+					{{ post.title }}: {{ post.short }}
 				</a>
 			</h2>
-		</li>
-		{% endfor %}
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus mauris,
+				elementum nec nisi nec, lacinia dapibus dolor. In hac habitasse platea dictumst.
+				Nunc nisl risus, venenatis in tellus in, egestas facilisis elit. Maecenas et
+				vulputate nisl. Aenean ultricies lorem sit amet ullamcorper lacinia. Donec bibendum
+				sollicitudin nunc, non dignissim velit sollicitudin non. In eu fermentum odio, non
+				ornare purus. Suspendisse eu posuere ante, vitae tincidunt mauris.
+			</p>
+		</div>
+	</div>
+	{% endfor %}
 
-		{% if site.posts.size == 0 %}
-		<p>
-			This is embarrassing! I don't have any projects?! <br>
-			Not to worry! I just need some time to write them up! <br>
-			They will trickle in after I write and document them.<br>
-			Stay Tuned~
-		</p>
+	<div class="row">
+		<!-- Pagination links -->
+		<!--<div class="pagination">-->
+		{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path }}" class="col-md-4 previous">Previous</a>
+		{% else %}
+		<span class="col-md-4 previous">Previous</span>
 		{% endif %}
-	</ul>
+		<span class="col-md-4 page_number"> Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+		{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path }}" class="col-md-4 next">Next</a>
+		{% else %}
+		<span class="col-md-4 next">Next</span>
+		{% endif %}
+		<!--</div>-->
+	</div>
+	{% else %}
+	<div class="row">
+		<div class="col-sm-offset-3 col-sm-7 col-md-offset-3 col-md-7 col-lg-offset-3 col-lg-7">
+			<p>
+				This is embarrassing! I don't have any projects?! <br>
+				Not to worry! I just need some time to write them up! <br>
+				They will trickle in after I write and document them.<br>
+				Stay Tuned~
+			</p>
+		</div>
+	</div>
+	{% endif %}
 
 </div>
