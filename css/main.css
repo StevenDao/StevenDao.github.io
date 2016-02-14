@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
  */
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.5;
 	font-weight: 300;
 	color: rgba(0, 0, 0, 0.75);
@@ -54,7 +54,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-	margin-left: 1.13em;
+	margin-left: 1.15em;
 }
 
 li > ul,
