@@ -78,7 +78,7 @@ a {
 }
 
 a:hover {
-	color: #0093b9;
+	color: #0089af;
 	text-decoration: none;
 }
 
@@ -204,7 +204,7 @@ pre > code {
 }
 
 .site-nav .page-link:hover {
-	color: #006987;
+	color: #0089af;
 }
 
 .site-nav .page-link:not(:first-child) {
