@@ -12,7 +12,7 @@ layout: default
 	<div class="row">
 		<!-- Left Side -->
 		<div class="col-sm-3 col-md-3">
-			<div class="date">{{ post.date | date: "%b %-d, %Y" }}</div>
+			<div class="postDate">{{ post.date | date: "%b %-d, %Y" }}</div>
 		</div>
 
 		<div class="col-sm-7 col-md-7">
@@ -22,12 +22,7 @@ layout: default
 				</a>
 			</h2>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus mauris,
-				elementum nec nisi nec, lacinia dapibus dolor. In hac habitasse platea dictumst.
-				Nunc nisl risus, venenatis in tellus in, egestas facilisis elit. Maecenas et
-				vulputate nisl. Aenean ultricies lorem sit amet ullamcorper lacinia. Donec bibendum
-				sollicitudin nunc, non dignissim velit sollicitudin non. In eu fermentum odio, non
-				ornare purus. Suspendisse eu posuere ante, vitae tincidunt mauris.
+				{{ post.excerpt }}
 			</p>
 		</div>
 	</div>

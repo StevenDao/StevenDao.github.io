@@ -46,7 +46,14 @@ h6 {
 	color: rgba(0, 0, 0, 0.65);
 	position: absolute;
 	right: 0.05em;
-	top: 1.16em;
+	top: 1.25em;
+}
+
+.postDate {
+	color: rgba(0, 0, 0, 0.65);
+	position: absolute;
+	right: 0.05em;
+	top: 1.06em;
 }
 
 .skills {
