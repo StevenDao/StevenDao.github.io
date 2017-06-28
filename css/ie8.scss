@@ -38,7 +38,7 @@
 
 	.icon {
 		&.major {
-			-ms-behavior: url('assets/js/ie/PIE.htc');
+			-ms-behavior: url('js/ie/PIE.htc');
 		}
 	}
 
@@ -46,7 +46,7 @@
 
 	.image {
 		position: relative;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
+		-ms-behavior: url('js/ie/PIE.htc');
 
 		&:before {
 			display: none;
@@ -54,7 +54,7 @@
 
 		img {
 			position: relative;
-			-ms-behavior: url('assets/js/ie/PIE.htc');
+			-ms-behavior: url('js/ie/PIE.htc');
 		}
 	}
 
@@ -66,10 +66,10 @@
 	select,
 	textarea {
 		position: relative;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
+		-ms-behavior: url('js/ie/PIE.htc');
 
 		&:focus {
-			-ms-behavior: url('assets/js/ie/PIE.htc');
+			-ms-behavior: url('js/ie/PIE.htc');
 		}
 	}
 
@@ -178,7 +178,7 @@
 	.dropotron {
 		background: _palette(accent2);
 		box-shadow: none !important;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
+		-ms-behavior: url('js/ie/PIE.htc');
 
 		> li {
 			a, span {
