@@ -7,18 +7,20 @@ layout: default
     <div class="content">
         <header>
             <h2>{{ site.title }}</h2>
-            <p>And there are no hoverboards or flying cars.<br/>
-                Just apps. Lots of mother flipping apps.</p>
+            <p>
+                <!--TODO: FIND SOMETHING TO SAY HERE-->
+                And there are no hoverboards or flying cars.<br/>
+                Just apps. Lots of mother flipping apps.
+            </p>
         </header>
         <span class="image"><img src="images/home/pic01.jpg" alt=""/></span>
     </div>
     <a href="#one" class="goto-next scrolly">Next</a>
 </section>
 
-<!-- One -->
 <section id="one" class="spotlight style1 bottom">
     {% assign post = site.posts.first %}
-    <span class="image fit main"><img src={{ post.image }} alt=""/></span>
+    <span class="image fit main"><img src="{{ post.image }}" alt=""/></span>
     <div class="content">
         <div class="container">
             <div class="row">
@@ -31,120 +33,33 @@ layout: default
                 <div class="8u 12u$(medium)">
                     {{ post.excerpt }}
                 </div>
-                <!--<div class="4u$ 12u$(medium)">-->
-                <!--<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante-->
-                <!--adipiscing adipiscing metus massa. Blandit orci porttitor semper.-->
-                <!--Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer-->
-                <!--mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem-->
-                <!--ipsum dolor nullam.</p>-->
-                <!--</div>-->
             </div>
         </div>
     </div>
     <a href="#two" class="goto-next scrolly">Next</a>
 </section>
 
-<!-- Two -->
-<!--<section id="two" class="spotlight style2 right">-->
-    <!--<span class="image fit main"><img src="images/home/pic03.jpg" alt=""/></span>-->
-    <!--<div class="content">-->
-        <!--<header>-->
-            <!--<h2>Interdum amet non magna accumsan</h2>-->
-            <!--<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>-->
-        <!--</header>-->
-        <!--<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer-->
-            <!--mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing-->
-            <!--lorem.</p>-->
-        <!--<ul class="actions">-->
-            <!--<li><a href="#" class="button">Learn More</a></li>-->
-        <!--</ul>-->
-    <!--</div>-->
-    <!--<a href="#three" class="goto-next scrolly">Next</a>-->
-<!--</section>-->
-
-<!-- Three -->
-<!--<section id="three" class="spotlight style3 left">-->
-    <!--<span class="image fit main bottom"><img src="images/home/pic04.jpg" alt=""/></span>-->
-    <!--<div class="content">-->
-        <!--<header>-->
-            <!--<h2>Interdum felis blandit praesent sed augue</h2>-->
-            <!--<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>-->
-        <!--</header>-->
-        <!--<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer-->
-            <!--mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing-->
-            <!--lorem.</p>-->
-        <!--<ul class="actions">-->
-            <!--<li><a href="#" class="button">Learn More</a></li>-->
-        <!--</ul>-->
-    <!--</div>-->
-    <!--<a href="#four" class="goto-next scrolly">Next</a>-->
-<!--</section>-->
-
-<!-- Four -->
-<section id="four" class="wrapper style1 special fade-up">
+<section id="two" class="wrapper style1 special fade-up">
     <div class="container">
         <header class="major">
             <h2>Recent Activity</h2>
-            <p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+            <p>Check out what I have been up to</p>
         </header>
         <div class="box alt">
             <div class="row uniform">
                 {% for post in site.posts limit:4 offset:1 %}
                 <section class="recent-posts 3u 6u(medium) 12u$(xsmall)">
-                    <span class="icon alt major fa-area-chart"></span>
+                    <img src="{{ post.image }}" class="img-responsive"></img>
                     <h3>{{ post.date | date: "%b %-d, %Y" }}<br>{{ post.title }}</h3>
                     <p>{{ post.short }}</p>
                 </section>
                 {% endfor %}
-
-                <!--<section class="4u 6u$(medium) 12u$(xsmall)">-->
-                    <!--<span class="icon alt major fa-comment"></span>-->
-                    <!--<h3>Eleifend lorem ornare</h3>-->
-                    <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
-                <!--</section>-->
-                <!--<section class="4u$ 6u(medium) 12u$(xsmall)">-->
-                    <!--<span class="icon alt major fa-flask"></span>-->
-                    <!--<h3>Cubilia cep lobortis</h3>-->
-                    <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
-                <!--</section>-->
-                <!--<section class="4u 6u$(medium) 12u$(xsmall)">-->
-                    <!--<span class="icon alt major fa-paper-plane"></span>-->
-                    <!--<h3>Non semper interdum</h3>-->
-                    <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
-                <!--</section>-->
-                <!--<section class="4u 6u(medium) 12u$(xsmall)">-->
-                    <!--<span class="icon alt major fa-file"></span>-->
-                    <!--<h3>Odio laoreet accumsan</h3>-->
-                    <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
-                <!--</section>-->
-                <!--<section class="4u$ 6u$(medium) 12u$(xsmall)">-->
-                    <!--<span class="icon alt major fa-lock"></span>-->
-                    <!--<h3>Massa arcu accumsan</h3>-->
-                    <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
-                <!--</section>-->
             </div>
         </div>
         <footer class="major">
             <ul class="actions">
-                <li><a href="projects" class="button">Read More</a></li>
+                <li><a href="projects" class="button">Read More Here!</a></li>
             </ul>
         </footer>
-    </div>
-</section>
-
-<!-- Five -->
-<section id="five" class="wrapper style2 special fade">
-    <div class="container">
-        <header>
-            <h2>Magna faucibus lorem diam</h2>
-            <p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
-        </header>
-        <form method="post" action="#" class="container 50%">
-            <div class="row uniform 50%">
-                <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email"
-                                                    placeholder="Your Email Address"/></div>
-                <div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special"/></div>
-            </div>
-        </form>
     </div>
 </section>
