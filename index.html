@@ -8,9 +8,7 @@ layout: default
         <header>
             <h2>{{ site.title }}</h2>
             <p>
-                <!--TODO: FIND SOMETHING TO SAY HERE-->
-                And there are no hoverboards or flying cars.<br/>
-                Just apps. Lots of mother flipping apps.
+               {{ site.description }}
             </p>
         </header>
         <span class="image"><img src="images/home/pic01.jpg" alt=""/></span>
@@ -31,14 +29,24 @@ layout: default
                     </header>
                 </div>
                 <div class="8u 12u$(medium)">
-                    {{ post.excerpt }}
+                    <p>
+                        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                    </p>
+
+
+                    {% if post.excerpt != post.content %}
+                    <ul class="actions">
+                        <li><a href="projects" class="button">Read More.</a></li>
+                    </ul>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
     <a href="#two" class="goto-next scrolly">Next</a>
 </section>
-
+{% assign totalPosts = site.posts | size %}
+{% if totalPosts > 1 %}
 <section id="two" class="wrapper style1 special fade-up">
     <div class="container">
         <header class="major">
@@ -50,7 +58,12 @@ layout: default
                 {% for post in site.posts limit:4 offset:1 %}
                 <section class="recent-posts 3u 6u(medium) 12u$(xsmall)">
                     <img src="{{ post.image }}" class="img-responsive"></img>
-                    <h3>{{ post.date | date: "%b %-d, %Y" }}<br>{{ post.title }}</h3>
+                    <h3>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                            {{ post.date | date: "%b %-d, %Y" }}<br>
+                            {{ post.title }}
+                        </a>
+                    </h3>
                     <p>{{ post.short }}</p>
                 </section>
                 {% endfor %}
@@ -58,8 +71,9 @@ layout: default
         </div>
         <footer class="major">
             <ul class="actions">
-                <li><a href="projects" class="button">Read More Here!</a></li>
+                <li><a href="projects" class="button">See It All.</a></li>
             </ul>
         </footer>
     </div>
 </section>
+{% endif %}

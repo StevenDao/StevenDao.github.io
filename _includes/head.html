@@ -21,7 +21,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,600italic,300italic,700">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <!--<link rel="stylesheet" href="{{ '/css/resume.css' | prepend: site.baseurl }}">-->
+
+    {% if page.title == 'Resume' %}
+    <link rel="stylesheet" href="{{ '/css/resume.css' | prepend: site.baseurl }}">
+    {% endif %}
 
     <!--favicons-->
     <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
