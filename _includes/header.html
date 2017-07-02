@@ -4,7 +4,10 @@
 	<nav id="nav">
 		<ul>
 			<li><a href="index.html">Home</a></li>
+			{% assign totalPosts = site.posts | size %}
+			{% if totalPosts > 1 %}
 			<li><a href="projects/index.html">Projects</a></li>
+			{% endif %}
 			<li><a href="resume.html">Resume</a></li>
 		</ul>
 	</nav>
