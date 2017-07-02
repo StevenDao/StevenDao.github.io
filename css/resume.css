@@ -1,4 +1,3 @@
-/* TEST */
 h2, h3, h4 {
 	margin-bottom: 0.25em;
 	color: #006987
@@ -43,10 +42,9 @@ h6 {
 }
 
 .date {
-	color: rgba(0, 0, 0, 0.65);
 	position: absolute;
 	right: 0.05em;
-	top: 1.25em;
+	top: 1.6rem;
 }
 
 .postDate {
@@ -63,4 +61,14 @@ h6 {
 .courses {
 	margin-left: -0.93em;
 	list-style-type: none;
+}
+
+#resume {
+    margin-top: 3rem;
+}
+
+@media (max-width: 767px) {
+    #resume {
+        margin-top: 1.5rem;
+    }
 }
