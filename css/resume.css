@@ -1,10 +1,22 @@
+html, body {
+	background: #fdf6e3;
+}
+
 h2, h3, h4 {
 	margin-bottom: 0.25em;
-	color: #006987
+	/*color: #5480f1*/
+}
+
+body, h1, h5 {
+	color: rgba(0, 0, 0, 0.75);
+}
+
+h1, h2, h3, h4, h6, strong, b, a:hover {
+	color: #006987 !important;
 }
 
 h1 {
-	font-weight: 800;
+	font-weight: 400;
 	margin-bottom: 0;
 }
 
@@ -59,16 +71,17 @@ h6 {
 }
 
 .courses {
-	margin-left: -0.93em;
+	margin-left: -2.36rem;
 	list-style-type: none;
 }
 
+
 #resume {
-    margin-top: 3rem;
+	margin-top: 3rem;
 }
 
 @media (max-width: 767px) {
-    #resume {
-        margin-top: 1.5rem;
-    }
+	#resume {
+		margin-top: 1.5rem;
+	}
 }
