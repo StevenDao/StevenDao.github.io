@@ -1,87 +1,109 @@
 html, body {
-	background: #fdf6e3;
+    background: #fdf6e3;
 }
 
 h2, h3, h4 {
-	margin-bottom: 0.25em;
-	/*color: #5480f1*/
+    margin-bottom: 0.25em;
+    /*color: #5480f1*/
 }
 
 body, h1, h5 {
-	color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 h1, h2, h3, h4, h6, strong, b, a:hover {
-	color: #006987 !important;
+    color: #006987 !important;
 }
 
 h1 {
-	font-weight: 400;
-	margin-bottom: 0;
+    font-weight: 400;
+    margin-bottom: 0;
 }
 
 h2 {
-	font-weight: 800;
-	font-size: 17px;
-	margin-top: 0.5em;
-	margin-bottom: 1.35em;
+    font-weight: 800;
+    font-size: 17px;
+    margin-top: 0.5em;
+    margin-bottom: 1.35em;
 }
 
 h3 {
-	font-weight: 800;
-	font-style: italic;
+    font-weight: 800;
+    font-style: italic;
 }
 
 h4 {
-	font-size: 15px;
+    font-size: 15px;
 }
 
 h5 {
-	font-weight: 800;
-	font-size: 15px;
-	margin-bottom: 0.35em;
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 0.35em;
 }
 
 h6 {
-	font-weight: 700;
-	font-size: 15px;
-	margin-bottom: 0.25em;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 0.25em;
 }
 
 #university {
-	margin-top: -0.15em;
-	margin-bottom: 1.35em;
+    margin-top: -0.15em;
+    margin-bottom: 1.35em;
 }
 
 .date {
-	position: absolute;
-	right: 0.05em;
-	top: 1.6rem;
+    position: absolute;
+    right: 0.05em;
+    top: 1.6rem;
 }
 
 .postDate {
-	color: rgba(0, 0, 0, 0.65);
-	position: absolute;
-	right: 0.05em;
-	top: 1.06em;
+    color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    right: 0.05em;
+    top: 1.06em;
 }
 
 .skills {
-	margin-bottom: 1.1em;
+    margin-bottom: 1.1em;
 }
 
 .courses {
-	margin-left: -2.36rem;
-	list-style-type: none;
+    margin-left: -2.36rem;
+    list-style-type: none;
 }
 
+.courses b,
+.courses strong {
+    color: rgba(0, 0, 0, 0.75) !important;
+    font-weight: 600;
+}
 
 #resume {
-	margin-top: 3rem;
+    margin-top: 3rem;
 }
 
 @media (max-width: 767px) {
-	#resume {
-		margin-top: 1.5rem;
-	}
+    .no-margin-bottom-xs {
+        margin-bottom: 0;
+    }
+
+    #resume {
+        margin-top: 1.5rem;
+    }
+
+    #university {
+        margin-bottom: 0.25em;
+    }
+
+    #university + h5 {
+        margin-bottom: 1.35em;
+    }
+
+    ul.courses {
+        margin-left: -2.36rem;
+        list-style-type: none;
+    }
 }
