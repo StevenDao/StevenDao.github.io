@@ -1,25 +1,20 @@
 ---
 layout: default
 ---
-<div class="post">
+<!-- Main -->
+<div id="main" class="wrapper style1">
+	<div class="container">
+		<header class="major">
+			<h2>
+				{{ page.date | date: "%b %-d, %Y" }}
+				<br> {{ page.title }}
+			</h2>
+			<p>{{ page.short }}</p>
+		</header>
 
-	<header class="col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 post-header">
-		<h1 class="post-title">
-			{{ page.title }}
-		</h1>
-		<p class="post-meta">
-			{{ page.date | date: "%b %-d, %Y" }}
-			{% if page.author %}
-			• {{ page.author }}
-			{% endif %}
-			{% if page.meta %}
-			• {{ page.meta }}
-			{% endif %}
-		</p>
-	</header>
-
-	<article class="col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 post-content">
-		{{ content }}
-	</article>
-
+		<!-- Content -->
+		<section id="content">
+			{{ content }}
+		</section>
+	</div>
 </div>
