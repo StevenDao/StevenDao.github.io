@@ -893,6 +893,7 @@
 		&:hover, &:active {
 			box-shadow: inset 0 0 0 1px _palette(accent1);
 			color: _palette(accent1) !important;
+			text-decoration: none;
 		}
 
 		&:active {

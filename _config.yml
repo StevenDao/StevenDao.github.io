@@ -5,7 +5,7 @@ email: Steven.Dao@alum.utoronto.ca
 description: >
   Making a change, One step at a time. <br>
   Always a work in progress.
-baseurl: ""
+baseurl: "/"
 url: "https://stevendao.github.io"
 github_username:  StevenDao
 permalink: "/:title"
@@ -13,7 +13,7 @@ permalink: "/:title"
 markdown: kramdown
 gems: [jekyll-paginate]
 # Paginate Settings
-paginate: 5
+paginate: 3
 paginate_path: "/projects/:num/"
 sass:
     sass_dir: _sass
