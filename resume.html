@@ -2,10 +2,8 @@
 layout: default
 title: "Resume"
 ---
-
-<div class="home">
+<div id="resume">
 	<div class="container-fluid">
-
 		<!-- Technical Skills -->
 		<div class="row">
 			<div class="col-sm-offset-3 col-sm-9 col-md-offset-3 col-md-9">
@@ -15,12 +13,11 @@ title: "Resume"
 		<div class="row">
 			<div class="col-sm-offset-3 col-sm-9 col-md-offset-3 col-md-9">
 				<h6>Programming Languages</h6>
-				<div class="skills">Java / Ruby / Python / Databases (MySQL) / HTML / CSS / JavaScript</div>
+				<div class="skills">PHP / Databases (MySQL) / Java / Ruby / HTML / CSS / JavaScript</div>
 				<h6>Development Tools</h6>
-				<div class="skills">Git / SVN / Eclipse / JetBrains / Atlassian Tool Suite / Jenkins / Selenium</div>
+				<div class="skills">Git / JetBrains / Codeception / Codeship / Envoyer / AWS </div>
 			</div>
 		</div>
-
 		<!-- Experience -->
 		<div class="row">
 			<div class="col-sm-offset-3 col-sm-9 col-md-offset-3 col-md-9">
@@ -28,15 +25,34 @@ title: "Resume"
 			</div>
 		</div>
 		<div class="row">
+			{% assign date = 'April 2016 - Present' %}
 			<!-- Left Side -->
-			<div class="col-sm-3 col-md-3">
-				<div class="date">May 2014-Present</div>
+			<div class="col-sm-3 col-md-3 hidden-xs hidden-xs">
+				<div class="date">{{ date }}</div>
 			</div>
-
+			<!-- Right Side -->
+			<div class="col-sm-9 col-md-9">
+				<h5>Full Stack PHP Developer</h5>
+				<h4>Strength.com</h4>
+				<h5 class="visible-xs">{{ date }}</h5>
+				<ul>
+					<li>Developed in the Laravel PHP Framework</li>
+					<li>Integrated with multiple payment gateways (PayPal, LimeLightCRM, ClickBank)</li>
+					<li>Maintained and improved system infrastructure to achieve scalability, maintainability and testability</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+            {% assign date = 'April 2015 - April 2016' %}
+            <!-- Left Side -->
+			<div class="col-sm-3 col-md-3 hidden-xs hidden-xs">
+				<div class="date">{{ date }}</div>
+			</div>
 			<!-- Right Side -->
 			<div class="col-sm-9 col-md-9">
 				<h5>Java Developer/Automation Tester</h5>
 				<h4>AcuityAds Inc.</h4>
+				<h5 class="visible-xs">{{ date }}</h5>
 				<ul>
 					<li>Developed front-end platform for real time advertising bidding</li>
 					<li>Implemented DAOs, services, models and controllers using Spring Framework</li>
@@ -47,17 +63,17 @@ title: "Resume"
 				</ul>
 			</div>
 		</div>
-
 		<div class="row">
-			<!-- Left Side -->
-			<div class="col-sm-3 col-md-3">
-				<div class="date">May 2014-Present</div>
+            {% assign date = 'May 2014 - April 2015' %}
+            <!-- Left Side -->
+			<div class="col-sm-3 col-md-3 hidden-xs">
+				<div class="date">{{ date }}</div>
 			</div>
-
 			<!-- Right Side -->
 			<div class="col-sm-9 col-md-9">
 				<h5>Automation Tester</h5>
 				<h4>AcuityAds Inc.</h4>
+				<h5 class="visible-xs">{{ date }}</h5>
 				<ul>
 					<li>Lead front-end/automation QA team</li>
 					<li>Investigated and proposed automation testing tools and frameworks</li>
@@ -66,101 +82,32 @@ title: "Resume"
 				</ul>
 			</div>
 		</div>
-
-		<div class="row">
-			<!-- Left Side -->
-			<div class="col-sm-3 col-md-3">
-				<div class="date">Fall 2015</div>
-			</div>
-
-			<!-- Right Side -->
-			<div class="col-sm-9 col-md-9">
-				<h5>Asteroid Game</h5>
-				<h4>CSC418 - Computer Graphics</h4>
-				<ul>
-					<li>Implemented a spaceship asteroid field survival game in OpenGL</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="row">
-			<!-- Left Side -->
-			<div class="col-sm-3 col-md-3">
-				<div class="date">Fall 2013</div>
-			</div>
-
-			<!-- Right Side -->
-			<div class="col-sm-9 col-md-9">
-				<h5>RapidCBT</h5>
-				<h4>CSC454 - Business of Software</h4>
-				<ul>
-					<li>Introduced to the world of start-ups and entrepreneurship</li>
-					<li>Developed a term long startup with mentorship from real entrepreneurs</li>
-					<li>Devised a business plan through the Business Model Canvas and market research</li>
-					<li>Pitched the product proposal to a live panel</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="row">
-			<!-- Left Side -->
-			<div class="col-sm-3 col-md-3">
-				<div class="date">Fall 2013</div>
-			</div>
-
-			<!-- Right Side -->
-			<div class="col-sm-9 col-md-9">
-				<h5>The East Scarborough Storefront</h5>
-				<h4>CSC301 - Intro to Software Engineering</h4>
-				<ul>
-					<li>Designed a scheduling system for the East Scarborough Storefront</li>
-					<li>Developed in the CodeIgniter framework in HTML, CSS, JavaScript, PHP, and MySQL</li>
-					<li>Used AGILE and Test Driven Development</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="row">
-			<!-- Left Side -->
-			<div class="col-sm-3 col-md-3">
-				<div class="date">Fall 2013</div>
-			</div>
-
-			<!-- Right Side -->
-			<div class="col-sm-9 col-md-9">
-				<h5>Clothing Manager</h5>
-				<h4>CSC318 - Design of Interactive Computational Media</h4>
-				<ul>
-					<li>Designed and established prototype for a clothing manager application</li>
-					<li>Conducted user research for requirements and usability
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- Education -->
-		<div class="row">
-			<div class="col-sm-offset-3 col-sm-9 col-md-offset-3 col-md-9">
-				<h2>Education</h2>
-			</div>
-		</div>
-		<div class="row">
-			<!-- Left Side -->
-			<div class="col-sm-3 col-md-3">
-				<div class="date">2011-2016 (expected)</div>
-			</div>
-			<div class="col-sm-9 col-md-9">
-				<h5>Bachelor of Arts & Science - Computer Science Specialist</h5>
-				<div id="university">University of Toronto - St. George Campus <br>
-					Toronto, Ontario
-				</div>
-			</div>
-		</div>
+        <!-- Education -->
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-9 col-md-offset-3 col-md-9">
+                <h2>Education</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% assign date = '2011 - 2016' %}
+            <!-- Left Side -->
+            <div class="col-sm-3 col-md-3 hidden-xs">
+                <div class="date">{{ date }}</div>
+            </div>
+            <div class="col-sm-9 col-md-9">
+                <h5>Bachelor of Arts & Science - Computer Science Specialist</h5>
+                <div id="university">
+                    University of Toronto - St. George Campus <br>
+                    Toronto, Ontario
+                </div>
+                <h5 class="visible-xs">{{ date }}</h5>
+            </div>
+        </div>
 		<div class="row">
 			<div class="col-sm-offset-3 col-sm-9 col-md-offset-3 col-md-9">
 				<h4>Courses of Personal Interest:</h4>
 				<div class="col-sm-6 col-md-6">
-					<ul class="courses">
+					<ul class="courses no-margin-bottom-xs">
 						<li><b>CSC302H1</b> Engineering Large Software Sys</li>
 						<li><b>CSC320H1</b> Intro to Visual Computing</li>
 						<li><b>CSC384H1</b> Intro Artificial Intelligence</li>
@@ -178,6 +125,83 @@ title: "Resume"
 				</div>
 			</div>
 		</div>
+        <!-- Experience -->
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-9 col-md-offset-3 col-md-9">
+                <h2>University Experience</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% assign date = 'Fall 2015' %}
+            <!-- Left Side -->
+            <div class="col-sm-3 col-md-3 hidden-xs">
+                <div class="date">{{ date }}</div>
+            </div>
+            <!-- Right Side -->
+            <div class="col-sm-9 col-md-9">
+                <h5>Asteroid Game</h5>
+                <h4>CSC418 - Computer Graphics</h4>
+                <h5 class="visible-xs">{{ date }}</h5>
+                <ul>
+                    <li>Implemented a spaceship asteroid field survival game in OpenGL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            {% assign date = 'Fall 2013' %}
+            <!-- Left Side -->
+            <div class="col-sm-3 col-md-3 hidden-xs">
+                <div class="date">{{ date }}</div>
+            </div>
+            <!-- Right Side -->
+            <div class="col-sm-9 col-md-9">
+                <h5>RapidCBT</h5>
+                <h4>CSC454 - Business of Software</h4>
+                <h5 class="visible-xs">{{ date }}</h5>
+                <ul>
+                    <li>Introduced to the world of start-ups and entrepreneurship</li>
+                    <li>Developed a term long startup with mentorship from real entrepreneurs</li>
+                    <li>Devised a business plan through the Business Model Canvas and market research</li>
+                    <li>Pitched the product proposal to a live panel</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            {% assign date = 'Fall 2013' %}
+            <!-- Left Side -->
+            <div class="col-sm-3 col-md-3 hidden-xs">
+                <div class="date">{{ date }}</div>
+            </div>
+            <!-- Right Side -->
+            <div class="col-sm-9 col-md-9">
+                <h5>The East Scarborough Storefront</h5>
+                <h4>CSC301 - Intro to Software Engineering</h4>
+                <h5 class="visible-xs">{{ date }}</h5>
+                <ul>
+                    <li>Designed a scheduling system for the East Scarborough Storefront</li>
+                    <li>Developed in the CodeIgniter framework in HTML, CSS, JavaScript, PHP, and MySQL</li>
+                    <li>Used AGILE and Test Driven Development</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            {% assign date = 'Fall 2013' %}
+            <!-- Left Side -->
+            <div class="col-sm-3 col-md-3 hidden-xs">
+                <div class="date">{{ date }}</div>
+            </div>
+            <!-- Right Side -->
+            <div class="col-sm-9 col-md-9">
+                <h5>Clothing Manager</h5>
+                <h4>CSC318 - Design of Interactive Computational Media</h4>
+                <h5 class="visible-xs">{{ date }}</h5>
+                <ul>
+                    <li>Designed and established prototype for a clothing manager application</li>
+                    <li>Conducted user research for requirements and usability
+                    </li>
+                </ul>
+            </div>
+        </div>
 	</div>
 </div>
 

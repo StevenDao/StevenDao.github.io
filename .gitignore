@@ -31,6 +31,7 @@
 /out/
 
 # mpeltonen/sbt-idea plugin
+.idea/
 .idea_modules/
 
 # JIRA plugin
@@ -41,3 +42,7 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# Compiled Jekyll Files
+_site
+.sass-cache
