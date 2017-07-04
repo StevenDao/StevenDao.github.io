@@ -2,24 +2,78 @@
 layout: default
 ---
 
-<div class="home">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8">
-				<p>
-					Hey, Welcome to my site! I'm Steven Dao, the author of this site/blog. I am expected to graduate with
-					the Bachelor’s of Art & Science, in the Computer Science Specialist program from the University for Toronto.
-					This site feels a little bare at the moment, but I am working hard to get this site up and running;
-					while balancing school, work, and life!
-				</p>
+<!-- Banner -->
+<section id="banner">
+    <div class="content">
+        <header>
+            <h2>{{ site.title }}</h2>
+            <p>
+               {{ site.description }}
+            </p>
+        </header>
+        <span class="image"><img src="images/home/pic01.jpg" alt=""/></span>
+    </div>
+    <a href="#one" class="goto-next scrolly">Next</a>
+</section>
 
-				<p>
-					Posts under Projects will consist of mainly Do-It-Yourself projects and fixes, personal thoughts and reviews
-					of
-					things that tickle my fancy. Mainly computers, programming, mechanical keyboards, audio equipment and music
-					(to name a few).
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
+<section id="one" class="spotlight style1 bottom">
+    {% assign post = site.posts.first %}
+    <span class="image fit main"><img src="{{ post.image }}" alt=""/></span>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="4u 12u$(medium)">
+                    <header>
+                        <h2>{{ post.date | date: "%b %-d, %Y" }} <br> {{ post.title }}</h2>
+                        <p>{{ post.short }}</p>
+                    </header>
+                </div>
+                <div class="8u 12u$(medium)">
+                    <p>
+                        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                    </p>
+
+
+                    {% if post.excerpt != post.content %}
+                    <ul class="actions">
+                        <li><a href="{{ post.url }}" class="button">Read More.</a></li>
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#two" class="goto-next scrolly">Next</a>
+</section>
+{% assign totalPosts = site.posts | size %}
+{% if totalPosts > 1 %}
+<section id="two" class="wrapper style1 special fade-up">
+    <div class="container">
+        <header class="major">
+            <h2>Recent Activity</h2>
+            <p>Check out what I have been up to</p>
+        </header>
+        <div class="box alt">
+            <div class="row uniform">
+                {% for post in site.posts limit:4 offset:1 %}
+                <section class="recent-posts 3u 6u(medium) 12u$(xsmall)">
+                    <img src="{{ post.image }}" class="img-responsive"></img>
+                    <h3>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                            {{ post.date | date: "%b %-d, %Y" }}<br>
+                            {{ post.title }}
+                        </a>
+                    </h3>
+                    <p>{{ post.short }}</p>
+                </section>
+                {% endfor %}
+            </div>
+        </div>
+        <footer class="major">
+            <ul class="actions">
+                <li><a href="projects" class="button">See It All.</a></li>
+            </ul>
+        </footer>
+    </div>
+</section>
+{% endif %}

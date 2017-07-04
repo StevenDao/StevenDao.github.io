@@ -1,11 +1,11 @@
 # Site settings
-title: Steven Dao
+title: StevenDao.
 author: Steven Dao
-email: Steven.Dao@mail.utoronto.ca
+email: Steven.Dao@alum.utoronto.ca
 description: >
-  This is still a work in progress! <br>
-  Making a change, one step at a time!
-baseurl: ""
+  Making a change, One step at a time. <br>
+  Always a work in progress.
+baseurl: "/"
 url: "https://stevendao.github.io"
 github_username:  StevenDao
 permalink: "/:title"
@@ -13,5 +13,8 @@ permalink: "/:title"
 markdown: kramdown
 gems: [jekyll-paginate]
 # Paginate Settings
-paginate: 5
+paginate: 3
 paginate_path: "/projects/:num/"
+sass:
+    sass_dir: _sass
+    style: compressed
