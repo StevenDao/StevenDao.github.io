@@ -8,7 +8,7 @@ layout: default
         <header>
             <h2>{{ site.title }}</h2>
             <p>
-               {{ site.description }}
+                {{ site.description }}
             </p>
         </header>
         <span class="image"><img src="images/home/pic01.jpg" alt=""/></span>
@@ -30,7 +30,8 @@ layout: default
                 </div>
                 <div class="8u 12u$(medium)">
                     <p>
-                        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                        {{ post.excerpt | remove: '
+                    <p>' | remove: '</p>' }}
                     </p>
 
 
@@ -77,3 +78,16 @@ layout: default
     </div>
 </section>
 {% endif %}
+<section id="three" class="wrapper style1 special fade-up">
+    <div class="container">
+        <header class="major">
+            <h2>Instagram</h2>
+        </header>
+        <div class="box alt">
+            <iframe src="//lightwidget.com/widgets/05332ba453ef5dd5a34ccadd1c5c6a65.html" scrolling="no"
+                    allowtransparency="true" class="lightwidget-widget"
+                    style="width:100%;border:0;overflow:hidden;"></iframe>
+
+        </div>
+    </div>
+</section>
