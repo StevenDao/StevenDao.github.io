@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- Banner -->
+<!-- Intro -->
 <div class="row">
     <div class="container-fluid">
         {% assign yearsWorking = 'now' | date: "%Y" | minus: site.work_year %}
@@ -13,10 +13,10 @@ layout: default
                 crypto mining at Blockmaintain, and currently open for new opportunities.
                 <div style="font-size: 2.3vw;">
                     <br>
-                    <a href="https://www.linkedin.com/in/daosteven/">LinkedIn</a><br>
-                    <a href="https://github.com/StevenDao">Github</a><br>
-                    <a href="mailto:steven.dao@alum.utoronto.ca">Email</a><br>
-                    <a href="https://www.instagram.com/okinadaikon/">Instagram</a><br>
+                    <a href="{{ site.url_linkedin }}" target="_blank">LinkedIn</a><br>
+                    <a href="{{ site.url_github }}" target="_blank">Github</a><br>
+                    <a href="mailto:{{ site.email }}">Email</a><br>
+                    <a href="{{ site.url_instagram }}" target="_blank">Instagram</a><br>
                 </div>
             </div>
         </div>
@@ -26,6 +26,8 @@ layout: default
              src="images/home/home_bio.jpg" alt=""/>
     </div>
 </div>
+
+<!-- Bio -->
 <div class="row" style="margin-top: 10%">
     <div class="container-fluid">
         <div class="row">
@@ -55,6 +57,8 @@ layout: default
         </div>
     </div>
 </div>
+
+<!-- Professional Experience -->
 <div class="container-fluid" style="margin-top: 10%">
     <div class="row">
         <header class="offset-1">
@@ -63,10 +67,10 @@ layout: default
     </div>
     <div class="row" style="margin-top: 5%">
         <div class="offset-1 col-3">
-            <div class="exp-date">
-                NOV.2017-NOV.2018
+            <div>
+                NOV.2017 - NOV.2018
             </div>
-            <div class="exp-company">
+            <div class="bold">
                 SR. Software Engineer - Blockmaintain
             </div>
         </div>
@@ -84,10 +88,10 @@ layout: default
     </div>
     <div class="row" style="margin-top: 5%">
         <div class="offset-1 col-3">
-            <div class="exp-date">
-                MAY.2016-NOV.2017
+            <div>
+                MAY.2016 - NOV.2017
             </div>
-            <div class="exp-company">
+            <div class="bold">
                 Full Stack PHP Developer - Strength.com
             </div>
         </div>
@@ -104,10 +108,10 @@ layout: default
     </div>
     <div class="row" style="margin-top: 5%">
         <div class="offset-1 col-3">
-            <div class="exp-date">
-                MAY.2014-MAY.2016
+            <div>
+                MAY.2014 - MAY.2016
             </div>
-            <div class="exp-company">
+            <div class="bold">
                 Java/Automation Developer - AcuityAds Inc.
             </div>
         </div>
@@ -122,18 +126,31 @@ layout: default
         </div>
     </div>
 </div>
+
+<!-- Instagram -->
 <div class="row" style="margin-top: 10%">
     <div class="container-fluid">
         <header class="offset-4 col-4">
             <h2 style="font-size: 2.3vw; color: #0EE5B4;">My day to day endeavours</h2>
         </header>
         <div class="offset-1 col-10">
-            <iframe src="//lightwidget.com/widgets/05332ba453ef5dd5a34ccadd1c5c6a65.html"
+            <iframe src="http://lightwidget.com/widgets/05332ba453ef5dd5a34ccadd1c5c6a65.html"
                     scrolling="no"
                     allowtransparency="true"
                     class="lightwidget-widget"
                     style="width:100%;border:0;overflow:hidden;">
             </iframe>
+        </div>
+    </div>
+</div>
+
+<!-- You Made It! -->
+<div class="row" style="margin-top: 10%">
+    <div class="container-fluid">
+        <div class="offset-1 col-10">
+            In a digital age like today, the power of human interaction and conversation is ever-so more important. If you’ve made it this far, let’s connect and chat to see where we can collaborate. How about it? Coffee? Beer?
+
+            <a href="mailto:{{ site.email }}">Let's do it!</a><br>
         </div>
     </div>
 </div>

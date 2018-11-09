@@ -5,3 +5,14 @@ html, body {
 .bold {
     font-weight: bold;
 }
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
