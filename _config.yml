@@ -7,9 +7,10 @@ description: >
   Always a work in progress.
 baseurl: "/"
 url: "https://stevendao.github.io"
-github_username:  StevenDao
+work_year: 2014
+github_username: StevenDao
 permalink: "/:title"
-# Build settings
+# Build settingsß
 markdown: kramdown
 gems: [jekyll-paginate]
 # Paginate Settings
