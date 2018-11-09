@@ -16,3 +16,14 @@ a:hover {
     text-decoration: none;
     background-color: transparent;
 }
+
+.contact a {
+    color: white;
+    text-decoration: underline;
+}
+
+.contact a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}

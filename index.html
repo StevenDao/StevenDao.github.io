@@ -130,7 +130,7 @@ layout: default
 <!-- Instagram -->
 <div class="row" style="margin-top: 10%">
     <div class="container-fluid">
-        <header class="offset-4 col-4">
+        <header class="offset-4 col-5">
             <h2 style="font-size: 2.3vw; color: #0EE5B4;">My day to day endeavours</h2>
         </header>
         <div class="offset-1 col-10">
@@ -145,12 +145,37 @@ layout: default
 </div>
 
 <!-- You Made It! -->
-<div class="row" style="margin-top: 10%">
+<div class="row contact"
+     style="margin-top: 10%; background-image: url('images/home/home_contact.png'); background-repeat: no-repeat; background-size: 45%; background-position: 60vw 12vw; background-color: #0EE5B4; background-blend-mode: multiply; color: white">
     <div class="container-fluid">
-        <div class="offset-1 col-10">
-            In a digital age like today, the power of human interaction and conversation is ever-so more important. If you’ve made it this far, let’s connect and chat to see where we can collaborate. How about it? Coffee? Beer?
+        <div class="row" style="padding-bottom: 5%">
+            <div class="offset-1 col-10" style="font-size: 2.3vw; margin-top: 5%">
+                <div>
+                    In a digital age like today, the power of human interaction and conversation is ever-so more
+                    important.
+                    If you’ve made it this far, let’s connect and chat to see where we can collaborate. How about it?
+                    Coffee? Beer?
+                </div>
+                <div style="margin-top: 5%">
+                    <a href="mailto:{{ site.email }}">Let's do it!</a>
+                </div>
+            </div>
+        </div>
 
-            <a href="mailto:{{ site.email }}">Let's do it!</a><br>
+        <div class="row" style="margin-top: 10%;padding-bottom: 4%">
+            <div class="offset-1 col-5">
+                <img id="logo-footer"
+                     style="max-width: 41%; filter: invert(1);"
+                     src="images/home/SD_Logo-01.png"
+                     alt=""/>
+                <div style="font-size: 1.5vw">{{ site.work_title }}</div>
+            </div>
+            <div class="col-5 text-right" style="align-self: flex-end">
+                <a href="https://www.linkedin.com/in/daosteven" target="_blank">LinkedIn</a> -
+                <a href="{{ site.url_github }}" target="_blank">GitHub</a> -
+                <a href="mailto:{{ site.email }}">Email</a> -
+                <a href="https://www.instagram.com/okinadaikon" target="_blank">Instagram</a>
+            </div>
         </div>
     </div>
 </div>
