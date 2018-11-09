@@ -7,11 +7,10 @@ layout: default
     <div class="container-fluid">
         {% assign yearsWorking = 'now' | date: "%Y" | minus: site.work_year %}
         <div class="row">
-            <div class="offset-1 col-6"
-                 style="font-size: 2.3vw; color: #0EE5B4; position: absolute; margin-top: 3%">
+            <div id="intro" class="offset-1 col-6">
                 Software engineer based in Toronto with {{ yearsWorking }} years of experience previously defining
                 crypto mining at Blockmaintain, and currently open for new opportunities.
-                <div style="font-size: 2.3vw;">
+                <div class="heading">
                     <br>
                     <a href="{{ site.url_linkedin }}" target="_blank">LinkedIn</a><br>
                     <a href="{{ site.url_github }}" target="_blank">Github</a><br>
@@ -22,20 +21,19 @@ layout: default
         </div>
         <img id="bio_photo"
              class="img-fluid float-right"
-             style="max-width: 45%; float: right; position: relative; z-index: -1;"
              src="images/home/home_bio.jpg" alt=""/>
     </div>
 </div>
 
 <!-- Bio -->
-<div class="row" style="margin-top: 10%">
+<div id="about" class="row marg-top-10p">
     <div class="container-fluid">
         <div class="row">
             <header class="offset-2 col-4">
-                <h2 style="font-size: 2.3vw; color: #0EE5B4;">The Dao of Steven</h2>
+                <div class="heading">The Dao of Steven</div>
             </header>
         </div>
-        <div class="offset-2 col-6" style="font-size: 1.15vw">
+        <div id="about-text" class="offset-2 col-6">
             After graduating from Bachelor of Arts & Science specializing in Computer Science at the University of
             Toronto, I had the pleasure of working with some pretty cool companies that nurtured me as a creative
             problem solver. I love to solve difficult problems, there’s nothing like the feeling of a dopamine rush
@@ -46,23 +44,23 @@ layout: default
         </div>
         <div class="row marg-top-5p">
             <div class="col-4">
-                <img class="img-fluid" style="width: 100%" src="images/home/about_keyboard.gif">
+                <img class="img-fluid"  src="images/home/about_keyboard.gif">
             </div>
             <div class="col-4">
-                <img class="img-fluid" style="width: 100%" src="images/home/about_rubiks.gif">
+                <img class="img-fluid" src="images/home/about_rubiks.gif">
             </div>
             <div class="col-4">
-                <img class="img-fluid" style="width: 100%" src="images/home/about_drum.gif">
+                <img class="img-fluid" src="images/home/about_drum.gif">
             </div>
         </div>
     </div>
 </div>
 
 <!-- Professional Experience -->
-<div class="container-fluid" style="margin-top: 10%">
+<div class="container-fluid marg-top-10p">
     <div class="row">
         <header class="offset-1">
-            <h2 style="font-size: 2.3vw; color: #0EE5B4;">Places I’ve worked, things I’ve done</h2>
+            <div class="heading">Places I’ve worked, things I’ve done</div>
         </header>
     </div>
     <div class="row marg-top-5p">
@@ -128,7 +126,7 @@ layout: default
 </div>
 
 <!-- Instagram -->
-<div class="row" style="margin-top: 10%">
+<div class="row marg-top-10p">
     <div class="container-fluid">
         <header class="offset-4 col-5">
             <div class="heading">My day to day endeavours</div>
@@ -147,7 +145,7 @@ layout: default
 <!-- You Made It! -->
 <div id="contact" class="row">
     <div class="container-fluid">
-        <div class="row" style="padding-bottom: 5%">
+        <div class="row pad-bot-5p">
             <div class="offset-1 col-10 heading marg-top-5p">
                 <div>
                     In a digital age like today, the power of human interaction and conversation is ever-so more
