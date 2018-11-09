@@ -2,92 +2,176 @@
 layout: default
 ---
 
-<!-- Banner -->
-<section id="banner">
-    <div class="content">
-        <header>
-            <h2>{{ site.title }}</h2>
-            <p>
-                {{ site.description }}
-            </p>
-        </header>
-        <span class="image"><img src="images/home/pic01.jpg" alt=""/></span>
-    </div>
-    <a href="#one" class="goto-next scrolly">Next</a>
-</section>
-
-<section id="one" class="spotlight style1 bottom">
-    {% assign post = site.posts.first %}
-    <span class="image fit main"><img src="{{ post.image }}" alt=""/></span>
-    <div class="content">
-        <div class="container">
-            <div class="row">
-                <div class="4u 12u$(medium)">
-                    <header>
-                        <h2>{{ post.date | date: "%b %-d, %Y" }} <br> {{ post.title }}</h2>
-                        <p>{{ post.short }}</p>
-                    </header>
-                </div>
-                <div class="8u 12u$(medium)">
-                    <p>
-                        {{ post.excerpt | remove: '
-                    <p>' | remove: '</p>' }}
-                    </p>
-
-
-                    {% if post.excerpt != post.content %}
-                    <ul class="actions">
-                        <li><a href="{{ post.url }}" class="button">Read More.</a></li>
-                    </ul>
-                    {% endif %}
+<!-- Intro -->
+<div class="row">
+    <div class="container-fluid">
+        {% assign yearsWorking = 'now' | date: "%Y" | minus: site.work_year %}
+        <div class="row">
+            <div id="intro" class="offset-1 col-6">
+                Software engineer based in Toronto with {{ yearsWorking }} years of experience previously defining
+                crypto mining at Blockmaintain, and currently open for new opportunities.
+                <div class="heading">
+                    <br>
+                    <a href="{{ site.url_linkedin }}" target="_blank">LinkedIn</a><br>
+                    <a href="{{ site.url_github }}" target="_blank">Github</a><br>
+                    <a href="mailto:{{ site.email }}">Email</a><br>
+                    <a href="{{ site.url_instagram }}" target="_blank">Instagram</a><br>
                 </div>
             </div>
         </div>
+        <img id="bio_photo"
+             class="img-fluid float-right"
+             src="images/home/home_bio.jpg" alt=""/>
     </div>
-    <a href="#two" class="goto-next scrolly">Next</a>
-</section>
-{% assign totalPosts = site.posts | size %}
-{% if totalPosts > 1 %}
-<section id="two" class="wrapper style1 special fade-up">
-    <div class="container">
-        <header class="major">
-            <h2>Recent Activity</h2>
-            <p>Check out what I have been up to</p>
-        </header>
-        <div class="box alt">
-            <div class="row uniform">
-                {% for post in site.posts limit:4 offset:1 %}
-                <section class="recent-posts 3u 6u(medium) 12u$(xsmall)">
-                    <img src="{{ post.image }}" class="img-responsive"></img>
-                    <h3>
-                        <a href="{{ site.baseurl }}{{ post.url }}">
-                            {{ post.date | date: "%b %-d, %Y" }}<br>
-                            {{ post.title }}
-                        </a>
-                    </h3>
-                    <p>{{ post.short }}</p>
-                </section>
-                {% endfor %}
+</div>
+
+<!-- Bio -->
+<div id="about" class="row marg-top-10p">
+    <div class="container-fluid">
+        <div class="row">
+            <header class="offset-2 col-4">
+                <div class="heading">The Dao of Steven</div>
+            </header>
+        </div>
+        <div id="about-text" class="offset-2 col-6">
+            After graduating from Bachelor of Arts & Science specializing in Computer Science at the University of
+            Toronto, I had the pleasure of working with some pretty cool companies that nurtured me as a creative
+            problem solver. I love to solve difficult problems, there’s nothing like the feeling of a dopamine rush
+            after solving it. I guess it all stemmed from my childhood obsession with Rubiks cubes. I take a lot of
+            pride in my work and believe the best result are built when teams work together and challenge each other. It
+            kind of reminds of when I played in a band; it’s about the collaboration and team work to get the optimal
+            result and expression.
+        </div>
+        <div class="row marg-top-5p">
+            <div class="col-4">
+                <img class="img-fluid"  src="images/home/about_keyboard.gif">
+            </div>
+            <div class="col-4">
+                <img class="img-fluid" src="images/home/about_rubiks.gif">
+            </div>
+            <div class="col-4">
+                <img class="img-fluid" src="images/home/about_drum.gif">
             </div>
         </div>
-        <footer class="major">
-            <ul class="actions">
-                <li><a href="projects" class="button">See It All.</a></li>
-            </ul>
-        </footer>
     </div>
-</section>
-{% endif %}
-<section id="three" class="wrapper style1 special fade-up">
-    <div class="container">
-        <header class="major">
-            <h2>Instagram</h2>
-        </header>
-        <div class="box alt">
-            <iframe src="//lightwidget.com/widgets/05332ba453ef5dd5a34ccadd1c5c6a65.html" scrolling="no"
-                    allowtransparency="true" class="lightwidget-widget"
-                    style="width:100%;border:0;overflow:hidden;"></iframe>
+</div>
 
+<!-- Professional Experience -->
+<div class="container-fluid marg-top-10p">
+    <div class="row">
+        <header class="offset-1">
+            <div class="heading">Places I’ve worked, things I’ve done</div>
+        </header>
+    </div>
+    <div class="row marg-top-5p">
+        <div class="offset-1 col-3">
+            <div>
+                NOV.2017 - NOV.2018
+            </div>
+            <div class="bold">
+                SR. Software Engineer - Blockmaintain
+            </div>
+        </div>
+        <div class="col-7">
+            • Designed and lead the implementation of an autonomous mining platform built initially with Shell scripts,
+            later evolving into a GoLang project to reduce manual maintenance on thousands of mining servers. <br>
+            • Developed custom/proprietary end to end management tools in the Laravel PHP framework as a mining solution
+            provider to enable remote servicing, system status, performance reports and earning summaries.<br>
+            • Managed on site technicians to improve and maintain remote mining sites.<br>
+            • Organized and optimized site operations from ordering parts, assembling mining servers to software
+            deployments.<br>
+            • Research, testing and optimize hardware to mine more efficiently in both computing power and energy
+            saving. Achieving up to 30% in energy efficiency and up to 40% more computing power.
         </div>
     </div>
-</section>
+    <div class="row marg-top-5p">
+        <div class="offset-1 col-3">
+            <div>
+                MAY.2016 - NOV.2017
+            </div>
+            <div class="bold">
+                Full Stack PHP Developer - Strength.com
+            </div>
+        </div>
+        <div class="col-7">
+            • Developed front and backend of an e-commerce storefront and platform built using the Laravel PHP
+            framework.<br>
+            • Integrated with multiple payment gateways using a service provider design pattern in order to support
+            different payment gateways while increasing maintainability. Payment gateways integrated includes PayPal,
+            LimeLightCRM, and ClickBank<br>
+            • Implemented the redesign and flow for the checkout process to improve customer acquisition. Includes
+            collecting data from A/B testing the original and redesigned flow for analysis.<br>
+            • Maintained and improved system infrastructure to achieve maintainability and testability.
+        </div>
+    </div>
+    <div class="row marg-top-5p">
+        <div class="offset-1 col-3">
+            <div>
+                MAY.2014 - MAY.2016
+            </div>
+            <div class="bold">
+                Java/Automation Developer - AcuityAds Inc.
+            </div>
+        </div>
+        <div class="exp-desc col-7">
+            • Developed the front-end platform for internal campaign managers and self-serve clients to setup
+            advertising campaigns.<br>
+            • Responsible for researching and implementing page templating for next generation platform.<br>
+            • Provided technical training and mentoring for new employees and interns.<br>
+            • Investigated and proposed automation testing tools, frameworks and ideals that were maintained as a test
+            suite for the next generation platform.<br>
+            • Created and designed test plans, executed testing procedures and implemented automation scripts.<br>
+        </div>
+    </div>
+</div>
+
+<!-- Instagram -->
+<div class="row marg-top-10p">
+    <div class="container-fluid">
+        <header class="offset-4 col-5">
+            <div class="heading">My day to day endeavours</div>
+        </header>
+        <div class="offset-1 col-10">
+            <iframe src="http://lightwidget.com/widgets/05332ba453ef5dd5a34ccadd1c5c6a65.html"
+                    scrolling="no"
+                    allowtransparency="true"
+                    class="lightwidget-widget"
+                    style="width:100%;border:0;overflow:hidden;">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<!-- You Made It! -->
+<div id="contact" class="row">
+    <div class="container-fluid">
+        <div class="row pad-bot-5p">
+            <div class="offset-1 col-10 heading marg-top-5p">
+                <div>
+                    In a digital age like today, the power of human interaction and conversation is ever-so more
+                    important. If you’ve made it this far, let’s connect and chat to see where we can collaborate. How
+                    about it? Coffee? Beer?
+                </div>
+                <div class="marg-top-5p">
+                    <a href="mailto:{{ site.email }}">Let's do it!</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer" class="row marg-top-10p">
+            <div class="offset-1 col-5">
+                <img id="footer-logo"
+                     src="images/home/SD_Logo-01.png"
+                     alt=""/>
+                <div id="footer-title">{{ site.work_title }}</div>
+            </div>
+            <div id="footer-social"
+                 class="col-5 text-right">
+                <a href="https://www.linkedin.com/in/daosteven" target="_blank">LinkedIn</a> -
+                <a href="{{ site.url_github }}" target="_blank">GitHub</a> -
+                <a href="mailto:{{ site.email }}">Email</a> -
+                <a href="https://www.instagram.com/okinadaikon" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+</div>

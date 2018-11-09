@@ -1,0 +1,105 @@
+html, body {
+    font-size: 1.15vw;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.heading {
+    font-size: 2.3vw;
+    color: #0EE5B4;
+}
+
+.marg-top-5p {
+    margin-top: 5%;
+}
+
+.marg-top-10p {
+    margin-top: 10%;
+}
+
+.pad-bot-5p {
+    padding-bottom: 5%;
+}
+
+#intro {
+    font-size: 2.3vw;
+    color: #0EE5B4;
+    position: absolute;
+    margin-top: 3%
+}
+
+#intro .heading {
+    font-size: 2.3vw;
+    color: black;
+}
+
+#bio_photo {
+    max-width: 45%;
+    float: right;
+    position: relative;
+    z-index: -1;
+}
+
+#about-text {
+    font-size: 1.15vw
+}
+
+#about img {
+    width: 100%;
+}
+
+#contact {
+    margin-top: 10%;
+    background-image: url('/images/home/home_contact.png');
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: 60vw 12vw;
+    background-color: #0EE5B4;
+    background-blend-mode: multiply;
+    color: white;
+}
+
+#contact a {
+    color: white;
+    text-decoration: underline;
+}
+
+#contact a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#contact .heading {
+    color: white;
+}
+
+#footer {
+    padding-bottom: 3.25%;
+}
+
+#footer-logo {
+    max-width: 41%;
+    filter: invert(1);
+}
+
+#footer-title {
+    font-size: 1.5vw
+}
+
+#footer-social {
+    align-self: flex-end;
+}
