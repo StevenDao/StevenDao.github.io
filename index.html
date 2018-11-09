@@ -44,7 +44,7 @@ layout: default
             kind of reminds of when I played in a band; it’s about the collaboration and team work to get the optimal
             result and expression.
         </div>
-        <div class="row" style="margin-top: 5%">
+        <div class="row marg-top-5p">
             <div class="col-4">
                 <img class="img-fluid" style="width: 100%" src="images/home/about_keyboard.gif">
             </div>
@@ -65,7 +65,7 @@ layout: default
             <h2 style="font-size: 2.3vw; color: #0EE5B4;">Places I’ve worked, things I’ve done</h2>
         </header>
     </div>
-    <div class="row" style="margin-top: 5%">
+    <div class="row marg-top-5p">
         <div class="offset-1 col-3">
             <div>
                 NOV.2017 - NOV.2018
@@ -86,7 +86,7 @@ layout: default
             saving. Achieving up to 30% in energy efficiency and up to 40% more computing power.
         </div>
     </div>
-    <div class="row" style="margin-top: 5%">
+    <div class="row marg-top-5p">
         <div class="offset-1 col-3">
             <div>
                 MAY.2016 - NOV.2017
@@ -106,7 +106,7 @@ layout: default
             • Maintained and improved system infrastructure to achieve maintainability and testability.
         </div>
     </div>
-    <div class="row" style="margin-top: 5%">
+    <div class="row marg-top-5p">
         <div class="offset-1 col-3">
             <div>
                 MAY.2014 - MAY.2016
@@ -131,7 +131,7 @@ layout: default
 <div class="row" style="margin-top: 10%">
     <div class="container-fluid">
         <header class="offset-4 col-5">
-            <h2 style="font-size: 2.3vw; color: #0EE5B4;">My day to day endeavours</h2>
+            <div class="heading">My day to day endeavours</div>
         </header>
         <div class="offset-1 col-10">
             <iframe src="http://lightwidget.com/widgets/05332ba453ef5dd5a34ccadd1c5c6a65.html"
@@ -145,32 +145,30 @@ layout: default
 </div>
 
 <!-- You Made It! -->
-<div class="row contact"
-     style="margin-top: 10%; background-image: url('images/home/home_contact.png'); background-repeat: no-repeat; background-size: 45%; background-position: 60vw 12vw; background-color: #0EE5B4; background-blend-mode: multiply; color: white">
+<div id="contact" class="row">
     <div class="container-fluid">
         <div class="row" style="padding-bottom: 5%">
-            <div class="offset-1 col-10" style="font-size: 2.3vw; margin-top: 5%">
+            <div class="offset-1 col-10 heading marg-top-5p">
                 <div>
                     In a digital age like today, the power of human interaction and conversation is ever-so more
-                    important.
-                    If you’ve made it this far, let’s connect and chat to see where we can collaborate. How about it?
-                    Coffee? Beer?
+                    important. If you’ve made it this far, let’s connect and chat to see where we can collaborate. How
+                    about it? Coffee? Beer?
                 </div>
-                <div style="margin-top: 5%">
+                <div class="marg-top-5p">
                     <a href="mailto:{{ site.email }}">Let's do it!</a>
                 </div>
             </div>
         </div>
 
-        <div class="row" style="margin-top: 10%;padding-bottom: 4%">
+        <div id="footer" class="row marg-top-10p">
             <div class="offset-1 col-5">
-                <img id="logo-footer"
-                     style="max-width: 41%; filter: invert(1);"
+                <img id="footer-logo"
                      src="images/home/SD_Logo-01.png"
                      alt=""/>
-                <div style="font-size: 1.5vw">{{ site.work_title }}</div>
+                <div id="footer-title">{{ site.work_title }}</div>
             </div>
-            <div class="col-5 text-right" style="align-self: flex-end">
+            <div id="footer-social"
+                 class="col-5 text-right">
                 <a href="https://www.linkedin.com/in/daosteven" target="_blank">LinkedIn</a> -
                 <a href="{{ site.url_github }}" target="_blank">GitHub</a> -
                 <a href="mailto:{{ site.email }}">Email</a> -
